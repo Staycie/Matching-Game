@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8649945-76E2-4FF7-8CBE-EE21637F4699}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Matching.My.MyApplication</StartupObject>
+    <RootNamespace>Matching</RootNamespace>
+    <AssemblyName>Matching</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Matching.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Matching.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="matchingg.Designer.vb">
+      <DependentUpon>matchingg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="matchingg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="matchingg.resx">
+      <DependentUpon>matchingg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nice.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yum.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\celeb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cutes.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20201029_064914.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CONG.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watermelon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_12-17-08.29.15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_12-17-08.49.50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_12-17-08.40.54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_12-17-08.57.00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_12-17-09.09.12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloudspink.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nice1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ye.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iolet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_12-18-07.32.15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_12-18-07.34.11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_12-18-07.34.45.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_12-18-07.32.50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nice2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mo %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_12-20-07.02.50.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
